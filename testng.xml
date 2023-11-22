@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UsersSuite">
+  
+<listeners>
+<listener class-name="project.utilities.Reporting"></listener>
+
+</listeners>
+
+<test thread-count="5" name="UsersTest">
+    <classes>
+      <class name="project.test.UserTests"/>
+      <!-- --><class name="project.test.DDTests"/>
+    </classes>
+  </test> <!-- UsersTest -->
+</suite> <!-- UsersSuite -->
